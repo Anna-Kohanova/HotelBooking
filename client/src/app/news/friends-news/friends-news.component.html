@@ -1,0 +1,12 @@
+<h4>NEWS oF MY FRIENDS</h4>
+
+<div>
+    <div class="panel-group" *ngIf="newsList">
+        <div class="panel panel-default" *ngFor="let news of newsList">
+            <div class="panel-heading">{{news.title}}</div>
+            <div class="panel-heading">{{news.date | date: 'dd/MM/yyyy'}}</div>
+            <div class="panel-heading">{{news.user.firstname}}</div>
+            <div class="panel-body">{{news.content}}</div>
+        </div>
+    </div>
+</div>

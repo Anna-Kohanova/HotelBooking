@@ -1,0 +1,21 @@
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{ 'Welcome to' | translate }}</a>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="/login" routerLinkActive="active">{{ 'Sign in' | translate }}</a></li>
+                <li><a routerLink="/register" routerLinkActive="active">{{ 'Register' | translate }}</a></li>
+                <li><a routerLink="/home" routerLinkActive="active" (click)="logout()">{{ 'Logout' | translate }}</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="btn-group col-md-push-10">
+        <button *ngFor="let lang of supportedLangs"
+                (click)="selectLang(lang.value)"
+                class="btn btn-default" [class.btn-primary]="isCurrentLang(lang.value)">
+            {{ lang.display }}
+        </button>
+    </div>
+</div>
+<router-outlet></router-outlet>

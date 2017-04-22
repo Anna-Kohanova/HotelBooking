@@ -1,0 +1,25 @@
+<h4>Add news</h4>
+<form name="form" novalidate [formGroup]="newsForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" type="text" class="form-control" name="title" formControlName="title" required/>
+        <div *ngIf="newsForm.get('title').hasError('required') && newsForm.get('title').touched" class="help-block">Title is
+            required
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="content">Content</label>
+        <input id="content" type="content" class="form-control" name="content" formControlName="content" required/>
+        <div *ngIf="newsForm.get('content').hasError('required') && newsForm.get('content').touched" class="help-block">Content
+            is required
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" [disabled]="newsForm.invalid || loading" class="btn btn-primary">Add news
+        </button>
+        <button (click)="reset()" class="btn btn-primary">Reset</button>
+        <button routerLink="user/news" routerLinkActive="active" class="btn btn-danger">Cancel</button>
+    </div>
+    <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+</form>

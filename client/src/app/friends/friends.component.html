@@ -1,0 +1,23 @@
+<h4>List of friends</h4>
+<div>
+    <table class="table table-bordered table-hover"  *ngIf="friendsList">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Firstname</th>
+            <th>Surname</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let friends of friendsList">
+            <td>{{friends.userBeta.username}}</td>
+            <td>{{friends.userBeta.firstname}}</td>
+            <td>{{friends.userBeta.surname}}</td>
+            <td>
+                <button class="btn btn-danger" >Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

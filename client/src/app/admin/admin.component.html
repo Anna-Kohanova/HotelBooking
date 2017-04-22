@@ -1,0 +1,61 @@
+<div>
+    <h3>Edit user's data</h3>
+    <form class="form-inline" name="form" novalidate [formGroup]="profileForm" *ngIf="profileUser" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="firstname">Firstname</label>
+            <input id="firstname" type="text" class="form-control" name="firstname" value="{{profileUser.firstname}}" formControlName="firstname" required/>
+            <div *ngIf="profileForm.get('firstname').hasError('required') && profileForm.get('firstname').touched" class="help-block">Firstname
+                is
+                required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname</label>
+            <input id="surname" type="text" class="form-control" name="surname" value="{{profileUser.surname}}" formControlName="surname" required/>
+            <div *ngIf="profileForm.get('surname').hasError('required') && profileForm.get('surname').touched" class="help-block">Surname
+                is
+                required
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="photo">Photo</label>
+            <input id="photo" type="text" class="form-control" name="photo" value="{{profileUser.photo}}" formControlName="photo" required/>
+            <div *ngIf="profileForm.get('photo').hasError('required') && profileForm.get('photo').touched" class="help-block">Photo
+                is
+                required
+            </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" [disabled]="profileForm.invalid || loading" class="btn btn-primary">Submit
+            </button>
+        </div>
+    </form>
+</div>
+<br>
+<div>
+    <table class="table table-bordered table-hover"  *ngIf="userList">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>Firstname</th>
+            <th>Surname</th>
+            <th>Photo</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.firstname}}</td>
+            <td>{{user.surname}}</td>
+            <td>{{user.photo}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onEdit(user.id)">Edit</button>
+                <button class="btn btn-danger" (click)="onDelete(user.id)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

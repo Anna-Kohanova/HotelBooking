@@ -1,0 +1,10 @@
+*.iml
+.idea/
+.gradle/
+/classes/
+/build/
+/gradle/
+/out/
+/gradlew
+/gradlew.bat
+npm-debug.log

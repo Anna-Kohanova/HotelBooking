@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-4 panel-group navcont" *ngIf="profileUser">
+        <div class="panel panel-default">
+            <div class="panel-heading">This is page about {{profileUser.username}}</div>
+            <div class="panel-heading">{{profileUser.photo}}</div>
+            <div class="panel-body">{{profileUser.username}}</div>
+        </div>
+        <div class="list-group unstyled">
+            <ul class="user-menu">
+                <li class="list-group-item"><a routerLink="update-profile" routerLinkActive="active">{{ 'About' | translate }}</a></li>
+                <li class="list-group-item"><a routerLink="news" routerLinkActive="active">{{ 'News' | translate }}</a></li>
+                <li class="list-group-item"><a routerLink="friends" routerLinkActive="active">{{ 'Friends' | translate }}</a></li>
+                <li class="list-group-item"><a routerLink="search" routerLinkActive="active">{{ 'Search friends' | translate }}</a></li>
+                <li class="list-group-item"><a routerLink="request" routerLinkActive="active">{{ 'Friend request' | translate }}</a></li>
+                <li class="list-group-item"><a routerLink="friends-news" routerLinkActive="active">{{ 'Friends news' | translate }}</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="col-md-8 content">
+        <router-outlet>
+
+        </router-outlet>
+    </div>
+</div>

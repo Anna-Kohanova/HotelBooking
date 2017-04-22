@@ -1,0 +1,23 @@
+<h4>List of your friend requests</h4>
+<div>
+    <table class="table table-bordered table-hover"  *ngIf="requestList">
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Firstname</th>
+            <th>Photo</th>
+            <th>Add to friends</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let friends of requestList">
+            <td>{{friends.userAlfa.username}}</td>
+            <td>{{friends.userAlfa.firstname}}</td>
+            <td>{{friends.userAlfa.photo}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onSubmit(friends.userAlfa.id)">Add</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
