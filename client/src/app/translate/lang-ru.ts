@@ -2,7 +2,7 @@ export const LANG_RU_NAME = 'ru';
 
 export const LANG_RU_TRANS = {
     'hello': 'Привет',
-    'Welcome to': 'Добро пожаловать в нашу сеть',
+    'Welcome to': 'Добро пожаловать в систему бронирования номеров в отеле!',
     'Sign in': 'Войти',
     'Register': 'Зарегистрироваться',
     'Logout': 'Выход',
@@ -23,5 +23,6 @@ export const LANG_RU_TRANS = {
     'Search friends': 'Поиск друзей',
     'Friend request': 'Запросы в друзья',
     'Friends news': 'Новости друзей',
-    'Rooms': 'Номера в отеле'
+    'Rooms': 'Номера в отеле',
+    'Members': 'Пользователи'
 };

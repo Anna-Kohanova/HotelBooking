@@ -12,7 +12,7 @@ import {RegisterComponent} from "./register/register.component";
 import {NotFoundComponent} from "./notfound/not-found.component";
 import {GuardService} from "./guard/guard.service";
 import {UserModule} from "./user/user.module";
-import {AdminComponent} from "./admin/admin.component";
+import {AdminModule} from "./admin/admin.module";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
 import {TranslateModule} from "./translate/translate.module";
 
@@ -23,6 +23,7 @@ import {TranslateModule} from "./translate/translate.module";
         FormsModule,
         HttpModule,
         UserModule,
+        AdminModule,
         AppRoutingModule,
         ReactiveFormsModule,
         RouterModule,
@@ -33,7 +34,6 @@ import {TranslateModule} from "./translate/translate.module";
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        AdminComponent,
         NotFoundComponent
     ],
     providers: [

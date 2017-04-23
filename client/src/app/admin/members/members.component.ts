@@ -1,23 +1,20 @@
-import {Component, OnInit} from "@angular/core";
-import {UserService} from "../user/user.service";
-import {User} from "../model/user";
+import {Component} from "@angular/core";
+import {User} from "../../model/user";
+import {MembersService} from "./members.service";
 import {FormGroup, FormControl, Validators} from "@angular/forms";
-import {LoginService} from "../authorization/login.service";
 
 @Component({
-    selector: 'admin-component',
-    templateUrl: './admin.component.html',
-    styleUrls: ['./admin.component.css']
+    selector: 'members-component',
+    templateUrl: './members.component.html'
 })
 
-export class AdminComponent implements OnInit {
+export class MembersComponent {
     id: number;
     userList: User[];
     profileUser: User;
     profileForm: FormGroup;
-    currentUser: User;
 
-    constructor(private userService: UserService) {
+    constructor(private membersService: MembersService) {
     }
 
     ngOnInit(): void {
@@ -25,8 +22,7 @@ export class AdminComponent implements OnInit {
     }
 
     private loadAll() {
-        this.currentUser = LoginService.getCurrentUser();
-        this.userService.loadUsers()
+        this.membersService.loadUsers()
             .subscribe(userList => this.userList = userList);
     }
 
@@ -51,12 +47,12 @@ export class AdminComponent implements OnInit {
         this.profileUser.firstname = this.profileForm.value.firstname;
         this.profileUser.surname = this.profileForm.value.surname;
         this.profileUser.photo = this.profileForm.value.photo;
-        this.userService.update(this.profileUser)
+        this.membersService.update(this.profileUser)
             .subscribe();
     }
 
     onDelete(id: number): void {
-        this.userService.remove(id)
+        this.membersService.remove(id)
             .subscribe(result => result ? this.loadAll() : alert("Error!"),
                 error => alert(error));
     }

@@ -2,7 +2,7 @@ export const LANG_EN_NAME = 'en';
 
 export const LANG_EN_TRANS = {
     'hello': 'Hello!',
-    'Welcome to': 'Welcome to our social network',
+    'Welcome to': 'Welcome to the Hotel Booking System!',
     'Sign in': 'Sign in',
     'Register': 'Register',
     'Logout': 'Logout',
@@ -23,5 +23,6 @@ export const LANG_EN_TRANS = {
     'Search friends': 'Search friends',
     'Friend request': 'Friend request',
     'Friends news': 'Friends news',
-    'Rooms': 'Hotel rooms'
+    'Rooms': 'Hotel rooms',
+    'Members': 'Users'
 };
