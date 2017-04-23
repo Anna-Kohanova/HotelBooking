@@ -22,5 +22,6 @@ export const LANG_RU_TRANS = {
     'Friends': 'Друзья',
     'Search friends': 'Поиск друзей',
     'Friend request': 'Запросы в друзья',
-    'Friends news': 'Новости друзей'
+    'Friends news': 'Новости друзей',
+    'Rooms': 'Номера в отеле'
 };

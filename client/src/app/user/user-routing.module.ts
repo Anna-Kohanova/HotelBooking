@@ -8,6 +8,7 @@ import {FriendsComponent} from "../friends/friends.component";
 import {SearchFriendsComponent} from "../friends/search/search-friends.component";
 import {RequestComponent} from "../friends/request/request.component";
 import {FriendsNewsComponent} from "../news/friends-news/friends-news.component";
+import {RoomComponent} from "../room/room.component";
 const routes: Routes = [
     {
         path: 'user', component: UserComponent,
@@ -41,6 +42,10 @@ const routes: Routes = [
             {
                 path: 'friends-news',
                 component: FriendsNewsComponent
+            },
+            {
+                path: 'room',
+                component: RoomComponent
             },
         ]
     },

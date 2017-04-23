@@ -22,5 +22,6 @@ export const LANG_EN_TRANS = {
     'Friends': 'Friends',
     'Search friends': 'Search friends',
     'Friend request': 'Friend request',
-    'Friends news': 'Friends news'
+    'Friends news': 'Friends news',
+    'Rooms': 'Hotel rooms'
 };

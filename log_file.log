@@ -1,0 +1,118 @@
+2017-04-23 14:55:19 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 14:55:19 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 14:55:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 14:55:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 14:55:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 14:55:20 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 14:55:21 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 14:57:02 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 14:57:02 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 14:57:02 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 14:57:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 14:57:02 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 14:57:02 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 14:57:04 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 14:59:04 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 14:59:05 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 14:59:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 14:59:05 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 14:59:05 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 14:59:05 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 14:59:06 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:00:45 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:00:46 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:00:46 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:00:46 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:00:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:00:46 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:00:47 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:01:01 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:02:02 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:02:02 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:02:02 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:02:02 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:02:03 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:02:03 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:02:04 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:02:20 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:02:20 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:03:22 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:03:22 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:03:22 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:03:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:03:23 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:03:23 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:03:24 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:03:44 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:03:44 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:04:01 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:05:50 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:05:50 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:05:50 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:05:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:05:50 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:05:50 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:05:51 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:06:25 ERROR AuthController:50 - Autenticate method failed with 400
+2017-04-23 15:06:30 ERROR AuthController:50 - Autenticate method failed with 400
+2017-04-23 15:06:40 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:06:40 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:07:14 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:09:40 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:09:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:09:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:09:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:09:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:09:41 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:09:43 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:10:15 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:10:15 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:21:30 INFO  UserController:48 - Start createUser method
+2017-04-23 15:21:30 INFO  UserController:64 - Start loadAllUsers method
+2017-04-23 15:21:52 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:21:52 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:21:54 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:21:56 INFO  UserController:54 - Start loadNewsById method
+2017-04-23 15:21:57 INFO  FriendsController:121 - Start loadFriendsById method
+2017-04-23 15:21:58 INFO  UserController:78 - Start loadPossibleFriends method
+2017-04-23 15:21:59 INFO  FriendsController:67 - Start loadRequestedFriendsById method
+2017-04-23 15:21:59 INFO  UserController:100 - Start loadNewsByFriends method
+2017-04-23 15:26:32 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: hib-jpa-persistence-unit
+	...]
+2017-04-23 15:26:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.6.Final}
+2017-04-23 15:26:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-04-23 15:26:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-04-23 15:26:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 15:26:34 INFO  LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2017-04-23 15:26:37 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 15:27:10 INFO  UserController:100 - Start loadNewsByFriends method
+2017-04-23 15:27:17 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:27:17 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:27:34 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:27:34 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:27:37 INFO  UserController:100 - Start loadNewsByFriends method
+2017-04-23 15:27:38 INFO  FriendsController:67 - Start loadRequestedFriendsById method
+2017-04-23 15:27:46 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:27:48 INFO  UserController:54 - Start loadNewsById method
+2017-04-23 15:28:07 INFO  UserController:48 - Start createUser method
+2017-04-23 15:28:07 INFO  UserController:64 - Start loadAllUsers method
+2017-04-23 15:28:08 INFO  UserController:128 - Start loadUserByUsername method
+2017-04-23 15:28:31 INFO  AuthController:46 - Autenticate method with token generating
+2017-04-23 15:28:31 INFO  UserController:64 - Start loadAllUsers method
