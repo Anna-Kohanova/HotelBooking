@@ -19,6 +19,8 @@
     <context:property-placeholder ignore-unresolvable="true" location="classpath:application.properties"/>
 
     <bean id="emf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="persistenceXmlLocation" value="classpath:META-INF/persistence.xml"/>
+        <property name="persistenceUnitName" value="hib-jpa-persistence-unit"/>
         <property name="dataSource" ref="dataSource" />
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
