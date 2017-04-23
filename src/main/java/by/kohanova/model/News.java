@@ -20,6 +20,10 @@ public class News implements Serializable {
     @JoinColumn(name = "author")
     public User user;
 
+    @ManyToOne
+    @JoinColumn(name = "room")
+    public Room room;
+
     @Column
     public String content;
 
