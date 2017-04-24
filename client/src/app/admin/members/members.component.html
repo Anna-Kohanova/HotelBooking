@@ -1,26 +1,33 @@
 <div>
     <h3>Edit user's data</h3>
-    <form class="form-inline" name="form" novalidate [formGroup]="profileForm" *ngIf="profileUser" (ngSubmit)="onSubmit()">
+    <form class="form-inline" name="form" novalidate [formGroup]="profileForm" *ngIf="profileUser"
+          (ngSubmit)="onSubmit()">
         <div class="form-group">
             <label for="firstname">Firstname</label>
-            <input id="firstname" type="text" class="form-control" name="firstname" value="{{profileUser.firstname}}" formControlName="firstname" required/>
-            <div *ngIf="profileForm.get('firstname').hasError('required') && profileForm.get('firstname').touched" class="help-block">Firstname
+            <input id="firstname" type="text" class="form-control" name="firstname" value="{{profileUser.firstname}}"
+                   formControlName="firstname" required/>
+            <div *ngIf="profileForm.get('firstname').hasError('required') && profileForm.get('firstname').touched"
+                 class="help-block">Firstname
                 is
                 required
             </div>
         </div>
         <div class="form-group">
             <label for="surname">Surname</label>
-            <input id="surname" type="text" class="form-control" name="surname" value="{{profileUser.surname}}" formControlName="surname" required/>
-            <div *ngIf="profileForm.get('surname').hasError('required') && profileForm.get('surname').touched" class="help-block">Surname
+            <input id="surname" type="text" class="form-control" name="surname" value="{{profileUser.surname}}"
+                   formControlName="surname" required/>
+            <div *ngIf="profileForm.get('surname').hasError('required') && profileForm.get('surname').touched"
+                 class="help-block">Surname
                 is
                 required
             </div>
         </div>
         <div class="form-group">
             <label for="photo">Photo</label>
-            <input id="photo" type="text" class="form-control" name="photo" value="{{profileUser.photo}}" formControlName="photo" required/>
-            <div *ngIf="profileForm.get('photo').hasError('required') && profileForm.get('photo').touched" class="help-block">Photo
+            <input id="photo" type="text" class="form-control" name="photo" value="{{profileUser.photo}}"
+                   formControlName="photo" required/>
+            <div *ngIf="profileForm.get('photo').hasError('required') && profileForm.get('photo').touched"
+                 class="help-block">Photo
                 is
                 required
             </div>
@@ -33,7 +40,7 @@
 </div>
 <br>
 <div>
-    <table class="table table-bordered table-hover"  *ngIf="userList">
+    <table class="table table-bordered table-hover" *ngIf="userList">
         <thead>
         <tr>
             <th>Id</th>
