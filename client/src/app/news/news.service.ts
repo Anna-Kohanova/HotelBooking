@@ -15,8 +15,6 @@ export class NewsService {
             .catch(this.handleError);
     }
 
-
-
     create(news: News) {
         const body = JSON.stringify({
             title: news.title, content: news.content, user: news.author

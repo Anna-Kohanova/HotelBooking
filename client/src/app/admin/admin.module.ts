@@ -10,6 +10,7 @@ import {AdminRoutingModule} from "./admin-routing.module";
 import {TranslateModule} from "../translate/translate.module";
 import {MembersComponent} from "./members/members.component";
 import {HotelRoomsComponent} from "./hotelrooms/hotelrooms.components";
+import {AddHotelRoomsComponent} from "./hotelrooms/add/add-hotelrooms.component";
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import {HotelRoomsComponent} from "./hotelrooms/hotelrooms.components";
     declarations: [
         AdminComponent,
         MembersComponent,
-        HotelRoomsComponent
+        HotelRoomsComponent,
+        AddHotelRoomsComponent
     ],
     providers: [
         LoginService,

@@ -1,0 +1,40 @@
+<h4>Add room</h4>
+<form name="form" novalidate [formGroup]="roomsForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" class="form-control" name="name" formControlName="name" required/>
+        <div *ngIf="roomsForm.get('name').hasError('required') && roomsForm.get('name').touched" class="help-block">Room name is
+            required
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input id="price" type="text" class="form-control" name="price" formControlName="price" required/>
+        <div *ngIf="roomsForm.get('price').hasError('required') && roomsForm.get('price').touched" class="help-block">Price
+            is required
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="rating">Rating</label>
+        <input id="rating" type="text" class="form-control" name="rating" formControlName="rating" required/>
+        <div *ngIf="roomsForm.get('rating').hasError('required') && roomsForm.get('rating').touched" class="help-block">Rating
+            is required
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="visitors">Visitors</label>
+        <input id="visitors" type="text" class="form-control" name="visitors" formControlName="visitors" required/>
+        <div *ngIf="roomsForm.get('visitors').hasError('required') && roomsForm.get('visitors').touched" class="help-block">Visitors
+            is required
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" [disabled]="roomsForm.invalid || loading" class="btn btn-primary">Add room
+        </button>
+        <button (click)="reset()" class="btn btn-primary">Reset</button>
+        <button routerLink="admin/hotelrooms" routerLinkActive="active" class="btn btn-danger">Cancel</button>
+    </div>
+    <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+</form>

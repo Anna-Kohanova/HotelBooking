@@ -17,9 +17,6 @@ public class Room implements Serializable {
     public String name;
 
     @Column
-    public int number;
-
-    @Column
     public int visitors;
 
     @Column
