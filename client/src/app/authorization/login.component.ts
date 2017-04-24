@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
                             this.router.navigate(['/user']);
                         }
                     } else {
-                        this.error = 'Authentification error';
+                        this.error = 'Authentification error!';
                         this.router.navigate(['/login']);
                     }
                 }

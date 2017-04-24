@@ -28,6 +28,9 @@ public class Room implements Serializable {
     @Column
     public double rating;
 
+    @Column
+    public String description;
+
     @OneToMany(mappedBy = "room")
     private List<News> news;
 

@@ -10,7 +10,6 @@ import {AdminRoutingModule} from "./admin-routing.module";
 import {TranslateModule} from "../translate/translate.module";
 import {MembersComponent} from "./members/members.component";
 import {HotelRoomsComponent} from "./hotelrooms/hotelrooms.components";
-import {MembersService} from "./members/members.service";
 
 @NgModule({
     imports: [
@@ -29,8 +28,7 @@ import {MembersService} from "./members/members.service";
     ],
     providers: [
         LoginService,
-        AdminService,
-        MembersService
+        AdminService
     ]
 })
 export class AdminModule {

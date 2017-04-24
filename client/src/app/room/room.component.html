@@ -1,1 +1,16 @@
-<div>The Room component!</div>
+<h1>Hotel rooms</h1>
+<router-outlet>
+
+</router-outlet>
+<div>
+    <div class="panel-group" *ngIf="roomsList">
+        <div class="panel panel-default" *ngFor="let room of roomsList">
+            <div class="panel-heading">{{room.name}}</div>
+            <div class="panel-heading">{{room.visitors}}</div>
+            <div class="panel-heading">{{room.price}}</div>
+            <div class="panel-heading">{{room.rating}}</div>
+            <div class="panel-body">{{room.description}}</div>
+            <button class="btn btn-info" (click)="onBook(room.id)">Book now</button>
+        </div>
+    </div>
+</div>

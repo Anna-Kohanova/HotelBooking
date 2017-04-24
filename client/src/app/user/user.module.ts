@@ -18,6 +18,7 @@ import {RequestComponent} from "../friends/request/request.component";
 import {FriendsNewsComponent} from "../news/friends-news/friends-news.component";
 import {TranslateModule} from "../translate/translate.module";
 import {RoomComponent} from "../room/room.component";
+import {RoomService} from "../room/room.service";
 
 @NgModule({
     imports: [
@@ -44,7 +45,8 @@ import {RoomComponent} from "../room/room.component";
         UserService,
         LoginService,
         NewsService,
-        FriendsService
+        FriendsService,
+        RoomService
     ]
 })
 export class UserModule {

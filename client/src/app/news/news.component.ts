@@ -8,7 +8,7 @@ import {News} from "../model/news";
     selector: 'news-component',
     templateUrl: './news.component.html'
 })
-export class NewsComponent  implements OnInit  {
+export class NewsComponent implements OnInit {
 
     currentUser: User;
     newsList: News[];

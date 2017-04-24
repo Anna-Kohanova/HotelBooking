@@ -1,7 +1,7 @@
 import {Component} from "@angular/core";
 import {User} from "../../model/user";
-import {MembersService} from "./members.service";
 import {FormGroup, FormControl, Validators} from "@angular/forms";
+import {UserService} from "../../user/user.service";
 
 @Component({
     selector: 'members-component',
@@ -14,7 +14,7 @@ export class MembersComponent {
     profileUser: User;
     profileForm: FormGroup;
 
-    constructor(private membersService: MembersService) {
+    constructor(private userService: UserService) {
     }
 
     ngOnInit(): void {
@@ -22,7 +22,7 @@ export class MembersComponent {
     }
 
     private loadAll() {
-        this.membersService.loadUsers()
+        this.userService.loadUsers()
             .subscribe(userList => this.userList = userList);
     }
 
@@ -47,12 +47,12 @@ export class MembersComponent {
         this.profileUser.firstname = this.profileForm.value.firstname;
         this.profileUser.surname = this.profileForm.value.surname;
         this.profileUser.photo = this.profileForm.value.photo;
-        this.membersService.update(this.profileUser)
+        this.userService.update(this.profileUser)
             .subscribe();
     }
 
     onDelete(id: number): void {
-        this.membersService.remove(id)
+        this.userService.remove(id)
             .subscribe(result => result ? this.loadAll() : alert("Error!"),
                 error => alert(error));
     }
