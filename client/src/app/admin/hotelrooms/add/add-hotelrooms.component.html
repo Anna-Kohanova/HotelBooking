@@ -1,48 +1,55 @@
 <h4>Add room</h4>
-<form name="form" novalidate [formGroup]="roomsForm" (ngSubmit)="onSubmit()">
+<form name="form" novalidate [formGroup]="roomsForm">
     <div class="form-group">
         <label for="name">Name</label>
         <input id="name" type="text" class="form-control" name="name" formControlName="name" required/>
-        <div *ngIf="roomsForm.get('name').hasError('required') && roomsForm.get('name').touched" class="help-block">Room name is
-            required
+        <div *ngIf="roomsForm.get('name').hasError('required') && roomsForm.get('name').touched" class="help-block">
+            Room name is required
         </div>
     </div>
-
     <div class="form-group">
         <label for="price">Price</label>
-        <input id="price" type="text" class="form-control" name="price" formControlName="price" required/>
-        <div *ngIf="roomsForm.get('price').hasError('required') && roomsForm.get('price').touched" class="help-block">Price
-            is required
+        <input id="price" type="number" step="1" class="form-control" name="price" formControlName="price" required pattern="[1-9][0-9]*(\.[0-9]*)?"/>
+        <div *ngIf="roomsForm.get('price').hasError('required') && roomsForm.get('price').touched" class="help-block">
+            Price is required
+        </div>
+        <div *ngIf="!roomsForm.get('price').hasError('required') && roomsForm.get('price').invalid && roomsForm.get('price').touched" class="help-block">
+            Price should be from 1.0 to ...$
         </div>
     </div>
     <div class="form-group">
         <label for="rating">Rating</label>
-        <input id="rating" type="text" class="form-control" name="rating" formControlName="rating" required/>
-        <div *ngIf="roomsForm.get('rating').hasError('required') && roomsForm.get('rating').touched" class="help-block">Rating
-            is required
+        <input id="rating" type="number" min="0" max="5" step="0.5" class="form-control" name="rating" formControlName="rating" required pattern="^(5|[0-4](\.[05])?)$"/>
+        <div *ngIf="roomsForm.get('rating').hasError('required') && roomsForm.get('rating').touched" class="help-block">
+            Rating is required
+        </div>
+        <div *ngIf="!roomsForm.get('rating').hasError('required') && roomsForm.get('rating').invalid && roomsForm.get('rating').touched" class="help-block">
+            Rating should be from 1.0 to 5.0 with possible step 0.5
         </div>
     </div>
     <div class="form-group">
         <label for="visitors">Visitors</label>
-        <input id="visitors" type="text" class="form-control" name="visitors" formControlName="visitors" required/>
-        <div *ngIf="roomsForm.get('visitors').hasError('required') && roomsForm.get('visitors').touched" class="help-block">Visitors
-            is required
+        <input id="visitors" type="text" class="form-control" name="visitors" formControlName="visitors" required pattern="[1-6]"/>
+        <div *ngIf="roomsForm.get('visitors').hasError('required') && roomsForm.get('visitors').touched" class="help-block">
+            Visitors is required
+        </div>
+        <div *ngIf="!roomsForm.get('visitors').hasError('required') && roomsForm.get('visitors').invalid && roomsForm.get('visitors').touched" class="help-block">
+            Visitors number should be from 1 to 6
         </div>
     </div>
-
     <div class="form-group">
         <label for="description">Description</label>
         <input id="description" type="text" class="form-control" name="description" formControlName="description" required/>
-        <div *ngIf="roomsForm.get('description').hasError('required') && roomsForm.get('description').touched" class="help-block">Description
-            is required
+        <div *ngIf="roomsForm.get('description').hasError('required') && roomsForm.get('description').touched" class="help-block">
+            Description is required
         </div>
     </div>
 
     <div class="form-group">
-        <button id="addRoomButton" type="submit" [disabled]="roomsForm.invalid || loading" class="btn btn-primary">Add room
+        <button id="addRoomButton" (click)="onSubmit()" type="submit" [disabled]="roomsForm.invalid || loading" class="btn btn-primary">Add room
         </button>
         <button (click)="reset()" class="btn btn-primary">Reset</button>
-        <button routerLink="admin/hotelrooms" routerLinkActive="active" class="btn btn-danger">Cancel</button>
+        <button routerLink="../" routerLinkActive="active" class="btn btn-danger">Cancel</button>
     </div>
     <div *ngIf="error" class="alert alert-danger">{{error}}</div>
 </form>

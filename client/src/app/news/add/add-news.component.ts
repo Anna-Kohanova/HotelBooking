@@ -16,10 +16,6 @@ export class AddNewsComponent{
 
     constructor(private newsService: NewsService, private router: Router){}
 
-    reset() {
-        this.newsForm.reset();
-    }
-
     ngOnInit(): void {
         this.newsForm = new FormGroup({
             title: new FormControl('', Validators.required),
@@ -38,5 +34,9 @@ export class AddNewsComponent{
                     this.router.navigate(['/user']);
                 }
             });
+    }
+
+    reset() {
+        this.newsForm.reset();
     }
 }

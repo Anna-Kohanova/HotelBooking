@@ -19,5 +19,7 @@ export const environment = {
     FRIENDS_NEWS_URL: '/news/friends',
 
     ROOMS_URL: '/rooms/all',
+    ROOMS_ADD_URL: '/rooms/add',
+
     USER_CONST: "CURRENT_USER"
 };
