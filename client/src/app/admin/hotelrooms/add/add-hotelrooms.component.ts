@@ -29,7 +29,8 @@ export class AddHotelRoomsComponent {
             price:this.roomsForm.value.price, rating:this.roomsForm.value.rating, description:this.roomsForm.value.description}))
             .subscribe(result => {
                 if (result === true) {
-                    this.router.navigate(['../admin/hotelrooms']);
+                    this.router.navigateByUrl('/fake', { skipLocationChange: true });
+                    setTimeout(() => this.router.navigate(['../admin/hotelrooms']));
                 } else {
                     this.router.navigate(['/admin']);
                 }

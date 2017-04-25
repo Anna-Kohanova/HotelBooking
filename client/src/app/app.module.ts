@@ -15,6 +15,7 @@ import {UserModule} from "./user/user.module";
 import {AdminModule} from "./admin/admin.module";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
 import {TranslateModule} from "./translate/translate.module";
+import {FakeComponent} from "./fake.component";
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {TranslateModule} from "./translate/translate.module";
         HomeComponent,
         LoginComponent,
         RegisterComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        FakeComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},

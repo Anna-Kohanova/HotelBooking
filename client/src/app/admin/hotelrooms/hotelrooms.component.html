@@ -1,7 +1,36 @@
 <h1>Hotel Rooms</h1>
 <router-outlet>
-
 </router-outlet>
 <div>
     <button class="btn btn-info" routerLink="add-hotelrooms" routerLinkActive="active">Add room</button>
+</div>
+<br>
+<div>
+    <table class="table table-bordered table-hover" *ngIf="roomsList">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Visitors</th>
+            <th>Description</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let room of roomsList">
+            <td>{{room.id}}</td>
+            <td>{{room.name}}</td>
+            <td>{{room.price}}</td>
+            <td>{{room.rating}}</td>
+            <td>{{room.visitors}}</td>
+            <td>{{room.description}}</td>
+            <td>
+                <button class="btn btn-info" (click)="onEdit(room.id)">Edit</button>
+                <button class="btn btn-danger" (click)="onDelete(room.id)">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
 </div>

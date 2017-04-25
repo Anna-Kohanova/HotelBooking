@@ -29,7 +29,8 @@ export class AddNewsComponent{
             content:this.newsForm.value.content, author:this.currentUser}))
             .subscribe(result => {
                 if (result === true) {
-                    this.router.navigate(['../user/news']);
+                    this.router.navigateByUrl('/fake', { skipLocationChange: true });
+                    setTimeout(() => this.router.navigate(['../user/news']));
                 } else {
                     this.router.navigate(['/user']);
                 }

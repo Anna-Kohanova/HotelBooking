@@ -29,7 +29,7 @@
     </div>
     <div class="form-group">
         <label for="visitors">Visitors</label>
-        <input id="visitors" type="text" class="form-control" name="visitors" formControlName="visitors" required pattern="[1-6]"/>
+        <input id="visitors" type="number" class="form-control" name="visitors" formControlName="visitors" required pattern="[1-6]"/>
         <div *ngIf="roomsForm.get('visitors').hasError('required') && roomsForm.get('visitors').touched" class="help-block">
             Visitors is required
         </div>
@@ -44,9 +44,8 @@
             Description is required
         </div>
     </div>
-
     <div class="form-group">
-        <button id="addRoomButton" (click)="onSubmit()" type="submit" [disabled]="roomsForm.invalid || loading" class="btn btn-primary">Add room
+        <button (click)="onSubmit()" type="submit" [disabled]="roomsForm.invalid || loading" class="btn btn-primary">Add room
         </button>
         <button (click)="reset()" class="btn btn-primary">Reset</button>
         <button routerLink="../" routerLinkActive="active" class="btn btn-danger">Cancel</button>
